@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SocketCamera</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_connect">連接</string>
+    <string name="action_disconnect">斷開</string>
+    <string name="action_videoStart">開始影像</string>
+    <string name="action_videoStop">停止影像</string>
+    <string name="action_Camchange">切換鏡頭</string>
+    <string name="action_bout">關於</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="伺服器設定" >
+        <EditTextPreference
+            android:defaultValue="Huadi"
+            android:key="userName"
+            android:summary="用於連接伺服器的使用者名稱"
+            android:title="使用者名稱" />
+        <EditTextPreference
+            android:defaultValue="192.168.4.1"
+            android:key="serverIP"
+            android:summary="欲連接伺服器 ip"
+            android:title="伺服器位址" />
+        <EditTextPreference
+            android:defaultValue="9527"
+            android:key="port"
+            android:summary="欲連接伺服器 port"
+            android:title="伺服器端口" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="影像設定" >
+        <EditTextPreference
+            android:defaultValue="100"
+            android:key="videoQuality"
+            android:summary="值為0~100，值越高越清晰，但同時數據也更大"
+            android:title="畫質" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
