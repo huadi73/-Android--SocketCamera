@@ -139,6 +139,7 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback,
 						try
 						{
 							camera.setPreviewDisplay(surfaceHolder);
+							camera.setDisplayOrientation(90); // 攝影機旋轉
 							camera.startPreview();
 						}
 						catch (IOException e)
@@ -187,10 +188,10 @@ public class MainActivity extends Activity implements SurfaceHolder.Callback,
 
 		camera.stopPreview();
 		camera.setPreviewCallback(this); // 會呼叫 onPreviewFrame
-		camera.setDisplayOrientation(0); // 攝影機旋轉
+		camera.setDisplayOrientation(90); // 攝影機旋轉
 
 		Camera.Parameters parameters = camera.getParameters();
-		parameters.setPreviewFpsRange(20, 30);
+		//parameters.setPreviewFpsRange(20, 60);
 		parameters.setPictureFormat(ImageFormat.JPEG);
 		// parameters.setPreviewSize(videoWidth, videoHeight);
 		// camera.setParameters(parameters); // android2.3.3以後不需要
